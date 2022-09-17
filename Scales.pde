@@ -12,7 +12,7 @@ void setup() {
   for (int y = -outset; y <= 500 + outset; y+=10)
   for (int x = -outset; x <= 500; x+=10)
   {
-    List<Integer> l = new ArrayList<>(4);
+    List<Integer> l = new ArrayList<Integer>(4);
     l.add(x); l.add(y); l.add((int)(Math.random()*5)); l.add(100+(int)(Math.random()*40));
     scales.add(l);
   }
