@@ -11,7 +11,11 @@ void setup() {
   frameRate(24);
   for (int y = -outset; y <= 500 + outset; y+=10)
   for (int x = -outset; x <= 500; x+=10)
-    scales.add(List.of(x, y, (int)(Math.random()*5), 100+(int)(Math.random()*40)));
+  {
+    List<Integer> l = new ArrayList<>(4);
+    l.add(x); l.add(y); l.add((int)(Math.random()*5)); l.add(100+(int)(Math.random()*40));
+    scales.add(l);
+  }
 }
 
 final float movespeed = 0.4;
