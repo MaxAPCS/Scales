@@ -1,8 +1,8 @@
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Iterator;
 
-LinkedList<List<Integer>> scales = new LinkedList<List<Integer>>();
+List<List<Integer>> scales = new ArrayList<List<Integer>>(4200);
 final int outset = 100;
 
 void setup() {
