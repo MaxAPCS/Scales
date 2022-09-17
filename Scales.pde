@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Iterator;
@@ -11,7 +12,7 @@ void setup() {
   frameRate(24);
   for (int y = -outset; y <= 500 + outset; y+=10)
   for (int x = -outset; x <= 500; x+=10)
-    scales.add(java.util.Arrays.asList(x, y, (int)(Math.random()*5), 100+(int)(Math.random()*40)));
+    scales.add(Arrays.asList(x, y, (int)(Math.random()*5), 100+(int)(Math.random()*40)));
 }
 
 final float movespeed = 0.4;
